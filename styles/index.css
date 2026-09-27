@@ -1,0 +1,265 @@
+.container {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.main {
+    padding: 111px 40px 40px;
+    position: relative;
+    display: flex;
+}
+
+.main-info {
+    max-width: 840px;
+    width: 100%;
+    position: relative;
+}
+
+.main-title {
+    margin-top: 98px;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #111111;
+    left: -15px;
+    position: relative;
+}
+
+.main-title span {
+    color: #ffcc00;
+}
+
+.main-features {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-feature {
+    background: #111111;
+    color: #ffffff;
+    padding: 12px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    border-radius: 10px;
+}
+
+.main-description {
+    margin-top: 50px;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #111111;
+}
+
+.main-actions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-actions .button {
+    height: 80px;
+    width: 433px;
+    font-size: 18px;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
+}
+
+.main-title-ghost {
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    bottom: -150px;
+    font-weight: 500;
+    font-size: 278px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ECEDF04D;
+}
+
+.main-image {
+    width: 1024px;
+    top: 100px;
+    z-index: -2;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    display: block;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform .08s ease, opacity .12s ease;
+    background: #ffcc00;
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #E5BC19;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #FADE6E;
+    color: #787878;
+    transform: none;
+}
+
+.button.button-white {
+    background: #ffffff;
+    border: 1px solid #111111;
+}
+
+.button.button-white:hover {
+    background: rgb(241 241 241);
+}
+
+@media (max-width: 1760px) {
+    .main-title {
+        font-size: 150px;
+        left: -7px;
+    }
+
+    .main-info {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-info {
+        max-width: 540px;
+    }
+
+    .main {
+        padding: 111px 20px 20px;
+    }
+
+    .main-title {
+        font-size: 120px;
+        left: -4px;
+    }
+
+    .main-title-ghost {
+        font-size: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-title {
+        margin-top: 30px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .main-image {
+        max-width: 350px;
+        position: absolute;
+        left: 370px;
+        top: 370px;
+    }
+
+    .main-info {
+        max-width: 100%;
+    }
+
+    .main-actions {
+        gap: 10px;
+    }
+
+    .main-actions .button {
+        height: 50px;
+        font-size: 14px;
+        width: auto;
+        max-width: 300px;
+    }
+
+    .main-description {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        left: 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .header-link span {
+        display: none;
+    }
+
+    .header-menu {
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 0 0 0 30px;
+        position: static;
+        transform: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .main-title {
+        font-size: 88px;
+    }
+
+    .main-description {
+        max-width: 100%;
+    }
+
+    .main-actions {
+        width: 100%;
+    }
+
+    .main-actions .button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-image {
+        max-width: 650px;
+        position: absolute;
+        left: 170px;
+        top: 70px;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 420px) {
+    .header-title {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 374px) {
+    .header-menu {
+        gap: 10px;
+        margin: 0 0 0 10px;
+    }
+}
